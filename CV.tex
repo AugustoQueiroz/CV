@@ -1,34 +1,40 @@
 \documentclass[10pt]{aqresume}
+\usepackage{ragged2e}
 \begin{document}
+  \RaggedRight
+  %\emergencystretch 2em
+
   \name{Augusto Sales de Queiroz}
 
   \position{Software Engineer}
 
-  \tagline{Back-end software engineer with front-end experience, passionate about writing code to leverage the power of data.}
+  \tagline{\textbf{Back-end} software engineer with \textbf{front-end} experience, passionate about \textbf{writing code} to leverage the power of \textbf{data}.}
 
   \contact{+1 (425) 209-6729}{asqueiroz@outlook.com}{www.augustoqueiroz.com}{augustoqueiroz}{augustoqueiroz}
 
   \section{Experience}
     \cvsubsection{Microsoft}{Software Engineer}{Jan. \rq 23--Present}{
-      \item Fully designed and developed an API to automatically generate descriptions for properties being listed through Bing. Leveraged user-provided structured information and GPT-3, and deployed as an Azure Function.
-      \item Trained and deployed a price estimation model to suggest listing prices to homeowners listing with Bing. Used Python, Sklearn, ADF, and Azure Functions.
-      \item Upgraded fraud detection system to improve coverage and precision by moving from a heuristic-based to an incremental penalty model and identify additional signals, including estimated price and user information and behavior.
+      \item \textbf{Fully designed} and \textbf{developed} an \textbf{API} to automatically \textbf{generate descriptions} for properties being listed through \textbf{Bing}. Leveraged user-provided structured information and \textit{OpenAI's GPT-3}, and deployed as an \textit{Azure Function}.
+      \item \textbf{Trained} and \textbf{deployed} a \textbf{price estimation model} to suggest listing prices to homeowners listing with \textbf{Bing}. Used \textit{Python}, \textit{Sklearn}, \textit{ADF}, and \textit{Azure Functions}.
+      \item Upgraded \textbf{fraud detection} system to \textbf{improve coverage} and \textbf{precision} by moving from a heuristic-based to an incremental penalty model and identify additional signals, including estimated price and user information and behavior.
     }
 
     \cvsubsection{Microsoft}{Software Engineer Intern}{May \rq 21--Aug. \rq 21}{
-      \item Designed and implemented entity clustering for the Bing Real Estate answer on maps, clustering millions of real estate entities in the back end and creating a custom UX treatment for the cluster POIs.
+      \item \textbf{Designed} and \textbf{implemented entity clustering} for the Bing Real Estate answer on \textbf{maps}, clustering \textbf{millions} of real estate entities in the backend and creating a custom UX treatment for the cluster POIs. Leveraged \textit{Sklearn's KMeans} and \textit{Python's multiprocessing} for clustering and wrote custom logic in the \textit{TypeScript} UX codebase for the new treatment.
     }
 
     \cvsubsection{Gemu}{Software Engineer Contractor}{Mar. \rq 21--May \rq 21}{
-      \item Co-designed and implemented a product to allow gamers to participate in public user-created challenges for Brawl Stars in the Gemu platform and track progress via integration with the game's public API. Used Node.js and AWS.
+      \item Co-\textbf{designed} and \textbf{implemented} a product to allow gamers to participate in \textbf{public user-created challenges} for \textbf{Brawl Stars} in the Gemu platform and track progress via integration with the game's public API. Used \textit{Node.js}, \textit{AWS Lambda}, and \textit{AWS Dynamodb}.
     }
 
-    \cvsubsection{Inria Sophia Antipolis}{Research Intern}{Mar. \rq 20--Dec. \rq 20}{
-      \item Designed and developed an experimentation suite to test and validate a novel bioinformatics tool, automating its execution with different parameter sets and processing the results. Used Python, Multiprocessing, and Matplotlib.
+    \cvsubsection{Inria}{Research Intern}{Mar. \rq 20--Dec. \rq 20}{
+      \item \textbf{Designed} and \textbf{developed} an \textbf{experimentation suite} to test and validate a \textbf{novel bioinformatics tool}, automating its execution with different parameter sets and processing the results. Used \textit{Python}, \textit{Multiprocessing}, and \textit{Matplotlib}.
     }
 
   \section{Education}
     \cvsubsection{BSc. Computer Engineering}{Universidade Federal de Pernambuco}{2022}
+
+    \cvsubsection{Computer Science Exchange Student}{Polytech Nice--Sophia}{2019--2020}
 
   \section{Skills}
     \vspace*{-1\multicolsep}
@@ -36,12 +42,13 @@
       []
       \raggedright\textbf{Programming}\\
       \textit{4+ years} Python / SQL\newline
-      \textit{2+ years} C\# / C++ / Swift / JavaScript
+      \textit{2+ years} C\# / C/C++ / Swift / JavaScript\newline
+      \textit{others} Go
       \vfill\null
       \columnbreak
 
       \textbf{Technical}\\
-      Git / Machine Learning / Azure / AWS / Data Engineering / Unit Testing
+      Git / Machine Learning / Azure / AWS / Data Engineering / Unit Testing / Embedded Systems Design \& Development / Linux / React
       \vfill\null
       \columnbreak
 

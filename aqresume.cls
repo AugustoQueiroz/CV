@@ -5,6 +5,7 @@
 \RequirePackage[a4paper, tmargin=0.75in, bmargin=0.75in, lmargin=1in, rmargin=1in]{geometry}
 
 \RequirePackage{xcolor}
+\definecolor{mainyellow}{RGB}{255, 231, 76}
 \RequirePackage{setspace}
 \RequirePackage{hyperref}
 \RequirePackage{multicol}
@@ -12,10 +13,13 @@
 \RequirePackage{fontspec}
 \setmainfont[
     BoldFont={NotoSans-Bold.ttf},
-    ItalicFont={NotoSans-Italic-VariableFont_wdth,wght.ttf}
+    ItalicFont={NotoSans-Italic-VariableFont_wdth,wght.ttf} 
 ]{NotoSans-VariableFont_wdth,wght.ttf}
+\setmonofont{NotoSans-VariableFont_wdth,wght.ttf}[Ligatures=TeX]
 
 \RequirePackage{fontawesome}
+
+\def\hrulefill{\textcolor{mainyellow}{\leavevmode\leaders\hrule height 4pt\hfill\kern\z@}}
 
 \pagenumbering{gobble}
 
@@ -24,10 +28,11 @@
 \renewcommand\labelitemi{\small$\bullet$}
 
 \RequirePackage{titlesec}
+\newcommand\sectionheader[1]{#1 \hrulefill}
 \titleformat{\section}
     {\setmainfont{Alata-Regular.ttf}\Large\raggedright\bfseries}
     {}{0em}
-    {}
+    {\sectionheader}
     []
 \titleformat{\subsection}
     {\raggedright}
@@ -57,7 +62,7 @@
 \newcommand{\cvsubsection}[4]{%
     \subsection[#1]{\textbf{#1 \textbar{}  \textcolor{gray}{#2}} \hfill \textit{\normalsize \textcolor{gray}{#3}}}
     % TODO - Put this behind if/else
-    \begin{itemize}
+    \begin{itemize}[leftmargin=*]
     \setlength{\itemsep}{0pt}
     #4
     \end{itemize}
